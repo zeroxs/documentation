@@ -1,11 +1,10 @@
 const fs = require('fs');
-const page = fs.readFileSync("./content/en/integrations/guide/aws-manual-setup.md", 'utf-8');
+const route = './content/en/integrations/guide/aws-manual-setup.md';
+const page = fs.readFileSync(route, 'utf-8');
+let regex2 = /\{\{% \/tab %\}\}/gim;
+let regex1 = /^\{\{\% tab (.*)\%\}\}$/gim;
 
-console.log("Online");
+let updatedPage = page.replace(regex1, '{{< tab $1>}}');
+updatedPage = updatedPage.replace(regex2, '{{< /tab >}}');
 
-// updatedPage = fs.writeFileSync("./content/en/account_management/authn_mapping/_index.md", page.replace(/^{{% (.*%)/gim, "{{<$1"));
-
-const updatedPage = page.replace(/\{\{\% tab (.*)\%\}\}/gim, "{{< tab $1>}}");
-updatedPage.replace(/^\{\{% \/tab %\}\}/g, "{{< /tab >}}");
-
-console.log(updatedPage);
+fs.writeFileSync(route, updatedPage);
