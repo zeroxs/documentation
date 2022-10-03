@@ -56,17 +56,17 @@ To create a rule from scratch:
 
 When you create, clone, or modify CSPM detection rules, you can specify tags to apply to findings so that you can group, filter, and search findings by those tags. When you clone a rule, some tags are carried forward into the new rule, and others are not (see table below). 
 
-You can assign almost any key-value as a tag. The following table shows tags that are useful in common security scenarios, and tags that are reserved for CSPM findings.
+You can assign almost any key-value as a tag. The following table shows tags that are useful in common security scenarios.
 
 | Key     | Valid values    | Description | 
 | ------  | --------------- | ----------- |
-| `scored` | `true`, `false` | **Reserved.** Indicates whether to include the rule when calculating organization's overall posture score. Automatically added to cloned rules. |
-| `security` | `compliance` | **Reserved.** Categorizes findings on the [Security Signals page][7]. Can't be removed. |
-| `requirement` | String | **Reserved.** Not allowed for custom rules. Indicates a requirement related to a compliance framework. Don't add this to rules not part of a compliance framework. Not automatically added to cloned rules. |
-| `cloud_provider` | `aws`, `gcp`, `azure` | **Reserved.** Cannot be removed. Is set automatically based on resource type.  |
-| `control` | String | **Reserved.** Not allowed for custom rules. Indicates a control related to a compliance framework. Don't add this to rules not part of a compliance framework. Not automatically added to cloned rules. |
-| `source` | String from a defined set of cloud providers as listed in the [Source facet in CSPM Findings][2] | **Reserved.** Cannot be removed. Automatically added to cloned rules. Facilitates grouping rules by cloud provider. |
-| `framework` | String | **Reserved.** Not allowed for custom rules. Indicates the compliance framework the rule belongs to. Not automatically added to cloned rules. |
+| `scored` | `true`, `false` | Indicates whether to include the rule when calculating organization's overall posture score. Automatically added to cloned rules. |
+| `security` | `compliance` | Categorizes findings on the [Security Signals page][7]. Can't be removed. |
+| `requirement` | String | Not allowed for custom rules. Indicates a requirement related to a compliance framework. Don't add this to rules not part of a compliance framework. |
+| `cloud_provider` | `aws`, `gcp`, `azure` | Cannot be removed. Is set automatically based on resource type.  |
+| `control` | String | Not allowed for custom rules. Indicates a control related to a compliance framework. Don't add this to rules not part of a compliance framework. |
+| `source` | String from a defined set given by cloud providers as listed in the [Source facet in CSPM Findings][2] | Cannot be removed. Automatically added to cloned rules. Facilitates grouping rules by cloud provider. |
+| `framework` | String | Not allowed for custom rules. Indicates the compliance framework the rule belongs to. Not automatically added to cloned rules. |
 
 
 ## Further reading
