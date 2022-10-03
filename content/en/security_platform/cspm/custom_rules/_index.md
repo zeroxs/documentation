@@ -43,16 +43,16 @@ To create a rule from scratch:
 2. Click **New Rule** in the upper-right.
 3. Select **Cloud Configuration** as the rule type.
 4. Specify the GCP resource types you are writing the rule for.
-5. Write the rule logic using [Rego][3], a policy-as-code language, either from scratch or by using the Datadog template. Read [Writing Custom Rules with Rego][4] for more information.
-6. Validate the logic of your rule by selecting resources and clicking **Test Rule**. See which resources passed and failed, along with corresponding resource tags.
-7. Exclude benign activity by specifying queries to include or remove certain resources from findings.
+5. Write the rule logic using [Rego][3], a policy-as-code language, either from scratch or by using the Datadog template. Read [Writing Custom Rules with Rego][4] for more information. Note that you can mark a resource as "pass", "fail" or "skip". If you do not mark a resource, it will be interpreted as "skip".
+6. Exclude benign activity by specifying queries to include or remove certain resources from findings.
+7. Validate the logic of your rule by selecting resources and clicking **Test Rule**. See which resources passed and failed, along with corresponding resource tags.
 8. Specify a severity (`Critical`, `High`, `Medium`, `Low`, or `Info`) for the rule.
 9. Select a facet (for example, for each resource type or for each account ID), and [specify a notification target][5] to signal.
 10. In **Say what's happening**, write a description for the notification, using template variables and notification options to make it useful. Read [Notifications][6] for details.
 11. Specify tags to apply to the result findings. Read [Tagging findings and reserved tags](#tagging-findings-and-reserved-tags) for more information.
 12. Click **Save Rule**.
 
-## Tagging findings and reserved tags
+## Tagging findings
 
 When you create, clone, or modify CSPM detection rules, you can specify tags to apply to findings so that you can group, filter, and search findings by those tags. When you clone a rule, some tags are carried forward into the new rule, and others are not (see table below). 
 
