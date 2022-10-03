@@ -48,8 +48,8 @@ To create a rule from scratch:
 7. Validate the logic of your rule by selecting resources and clicking **Test Rule**. See which resources passed and failed, along with corresponding resource tags.
 8. Specify a severity (`Critical`, `High`, `Medium`, `Low`, or `Info`) for the rule.
 9. Select a facet (for example, for each resource type or for each account ID), and [specify a notification target][5] to signal.
-10. In **Say what's happening**, write a description for the notification, using template variables and notification options to make it useful. Read [Notifications][6] for details.
-11. Specify tags to apply to the result findings. Read [Tagging findings and reserved tags](#tagging-findings-and-reserved-tags) for more information.
+10. In **Say what's happening**, write a description for the notification, using notification options to make it useful. Read [Notifications][6] for details.
+11. Specify tags to apply to the result findings. Read [Tagging findings](#tagging-findings) for more information.
 12. Click **Save Rule**.
 
 ## Tagging findings
