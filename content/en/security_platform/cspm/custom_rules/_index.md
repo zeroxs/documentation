@@ -47,13 +47,13 @@ To create a rule from scratch:
 
 {{< img src="security_platform/cspm/custom_rules/custom_rules_first_half.png" alt="Custom Rules Steps" width="100%">}}
 
-7. Exclude benign activity by specifying queries to include or remove certain resources from findings.
-8. Validate the logic of your rule by selecting resources and clicking **Test Rule**. See which resources passed and failed, along with corresponding resource tags.
-9. Specify a severity (`Critical`, `High`, `Medium`, `Low`, or `Info`) for the rule.
-10. Select a facet (for example, for each resource type or for each account ID), and [specify a notification target][5] to signal.
-11. In **Say what's happening**, write a description for the notification, using notification options to make it useful. Read [Notifications][6] for details.
-12. Specify tags to apply to the result findings. Read [Tagging findings](#tagging-findings) for more information.
-13. Click **Save Rule**.
+6. Exclude benign activity by specifying queries to include or remove certain resources from findings.
+7. Validate the logic of your rule by selecting resources and clicking **Test Rule**. See which resources passed and failed, along with corresponding resource tags.
+8. Specify a severity (`Critical`, `High`, `Medium`, `Low`, or `Info`) for the rule.
+9. Select a facet (for example, for each resource type or for each account ID), and [specify a notification target][5] to signal.
+10. In **Say what's happening**, write a description for the notification, using notification options to make it useful. Read [Notifications][6] for details.
+11. Specify tags to apply to the result findings. Read [Tagging findings](#tagging-findings) for more information.
+12. Click **Save Rule**.
 
 {{< img src="security_platform/cspm/custom_rules/custom_rules_second_half.png" alt="Custom Rules Steps" width="100%">}}
 
