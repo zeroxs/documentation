@@ -91,6 +91,8 @@ Advanced search lets you query SLOs by any combination of SLO attributes:
 
 To run a search, use the facet checkboxes on the left and the search bar at the top. When you check the boxes, the search bar updates with the equivalent query. Likewise, when you modify the search bar query (or write one from scratch), the checkboxes update to reflect the change. Query results update in real-time as you edit the query; there's no 'Search' button to click.
 
+View metric-based SLO statuses by calendar weeks and months with the Calendar view options. The default option is **Primary**, click on the dropdown menu to switch to the **Weekly** or **Monthly** view. 
+
 To edit an individual SLO, hover over it and use the buttons that appear at the right of its row: **Edit**, **Clone**, **Delete**. To see more details on an SLO, click its table row to open its details side panel.
 
 **Note**: You can view your SLOs from your mobile device home screen by downloading the [Datadog Mobile App][9], available on the [Apple App Store][10] and [Google Play Store][11].
