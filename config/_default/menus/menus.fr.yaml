@@ -4712,179 +4712,179 @@ main:
 - identifier: agent_docker
   name: Docker
   parent: agent
-  url: agent/docker/
+  url: containers/docker/
   weight: 2
 - identifier: agent_docker_apm
   name: APM
   parent: agent_docker
-  url: agent/docker/apm/
+  url: containers/docker/apm/
   weight: 201
 - identifier: agent_docker_log
   name: Collecte de logs
   parent: agent_docker
-  url: agent/docker/log/
+  url: containers/docker/log/
   weight: 203
 - identifier: agent_docker_tag
   name: Extraction de tag
   parent: agent_docker
-  url: agent/docker/tag/
+  url: containers/docker/tag/
   weight: 204
 - identifier: agent_docker_integrations
   name: Autodiscovery
   parent: agent_docker
-  url: agent/docker/integrations/
+  url: containers/docker/integrations/
   weight: 205
 - identifier: agent_docker_prometheus
   name: Prometheus
   parent: agent_docker
-  url: agent/docker/prometheus/
+  url: containers/docker/prometheus/
   weight: 206
 - identifier: agent_docker_data_collected
   name: Données collectées
   parent: agent_docker
-  url: agent/docker/data_collected/
+  url: containers/docker/data_collected/
   weight: 207
 - identifier: agent_kubernetes
   name: Kubernetes
   parent: agent
-  url: agent/kubernetes/
+  url: containers/kubernetes/
   weight: 3
 - identifier: agent_kubernetes_installation
   name: Installation
   parent: agent_kubernetes
-  url: agent/kubernetes/installation
+  url: containers/kubernetes/installation
   weight: 301
 - identifier: agent_kubernetes_configuration
   name: Configuration
   parent: agent_kubernetes
-  url: agent/kubernetes/configuration
+  url: containers/kubernetes/configuration
   weight: 302
 - identifier: agent_kubernetes_distributions
   name: Distributions
   parent: agent_kubernetes
-  url: agent/kubernetes/distributions
+  url: containers/kubernetes/distributions
   weight: 303
 - identifier: agent_kubernetes_apm
   name: APM
   parent: agent_kubernetes
-  url: agent/kubernetes/apm/
+  url: containers/kubernetes/apm/
   weight: 304
 - identifier: agent_kubernetes_log
   name: Collecte de logs
   parent: agent_kubernetes
-  url: agent/kubernetes/log/
+  url: containers/kubernetes/log/
   weight: 305
 - identifier: agent_kubernetes_tag
   name: Extraction de tag
   parent: agent_kubernetes
-  url: agent/kubernetes/tag/
+  url: containers/kubernetes/tag/
   weight: 306
 - identifier: agent_kubernetes_integrations
   name: Intégrations et Autodiscovery
   parent: agent_kubernetes
-  url: agent/kubernetes/integrations/
+  url: containers/kubernetes/integrations/
   weight: 307
 - identifier: agent_kubernetes_prometheus
   name: Prometheus et OpenMetrics
   parent: agent_kubernetes
-  url: agent/kubernetes/prometheus/
+  url: containers/kubernetes/prometheus/
   weight: 308
 - identifier: agent_kubernetes_control_plane
   name: Surveillance du control plane
   parent: agent_kubernetes
-  url: agent/kubernetes/control_plane/
+  url: containers/kubernetes/control_plane/
   weight: 309
 - identifier: agent_kubernetes_data_collected
   name: Données collectées
   parent: agent_kubernetes
-  url: agent/kubernetes/data_collected/
+  url: containers/kubernetes/data_collected/
   weight: 310
 - identifier: agent_kubernetes_operator_configuration
   name: Configuration de l'Operator
   parent: agent_kubernetes
-  url: agent/kubernetes/operator_configuration
+  url: containers/kubernetes/operator_configuration
   weight: 311
 - identifier: agent_cluster
   name: Agent de cluster
   parent: agent
-  url: agent/cluster_agent/
+  url: containers/cluster_agent/
   weight: 4
 - identifier: cluster_agent_setup
   name: Configuration
   parent: agent_cluster
-  url: agent/cluster_agent/setup/
+  url: containers/cluster_agent/setup/
   weight: 401
-- identifier: cluster_agent_event_collection
+- identifier: containers_cluster_agent_setup
   name: Collecte d'événements
   parent: agent_cluster
-  url: agent/cluster_agent/event_collection/
+  url: containers/cluster_agent/setup/
   weight: 402
 - identifier: cluster_agent_external_metrics
   name: Métriques externes et custom
   parent: agent_cluster
-  url: agent/cluster_agent/external_metrics/
+  url: containers/cluster_agent/external_metrics/
   weight: 403
 - name: Checks de cluster
   parent: agent_cluster
-  url: agent/cluster_agent/clusterchecks/
+  url: containers/cluster_agent/clusterchecks/
   weight: 404
 - name: Checks d'endpoints
   parent: agent_cluster
-  url: agent/cluster_agent/endpointschecks/
+  url: containers/cluster_agent/endpointschecks/
   weight: 405
 - name: Contrôleur d'admission
   parent: agent_cluster
-  url: agent/cluster_agent/admission_controller/
+  url: containers/cluster_agent/admission_controller/
   weight: 406
 - identifier: cluster_agent_commands
   name: Commandes et options
   parent: agent_cluster
-  url: agent/cluster_agent/commands/
+  url: containers/cluster_agent/commands/
   weight: 407
 - identifier: cluster_agent_metadata_provider
   name: Fournisseur de métadonnées sur le cluster
   parent: agent_cluster
-  url: agent/cluster_agent/metadata_provider/
+  url: containers/cluster_agent/metadata_provider/
   weight: 408
 - identifier: cluster_agent_build
   name: Créer l'image
   parent: agent_cluster
-  url: agent/cluster_agent/build/
+  url: containers/cluster_agent/build/
   weight: 409
 - identifier: cluster_agent_clcr
   name: Exécuteur de checks de cluster
   parent: agent_cluster
-  url: agent/cluster_agent/clusterchecksrunner
+  url: containers/cluster_agent/clusterchecksrunner
   weight: 410
 - identifier: cluster_agent_troubleshooting
   name: Dépannage
   parent: agent_cluster
-  url: agent/cluster_agent/troubleshooting/
+  url: containers/cluster_agent/troubleshooting/
   weight: 411
-- identifier: agent_amazon_ecs
+- identifier: containers_amazon_ecs
   name: Amazon ECS
   parent: agent
-  url: agent/amazon_ecs/
+  url: containers/amazon_ecs/
   weight: 5
-- identifier: agent_amazon_ecs_apm
+- identifier: containers_amazon_ecs_apm
   name: APM
-  parent: agent_amazon_ecs
-  url: agent/amazon_ecs/apm/
+  parent: containers_amazon_ecs
+  url: containers/amazon_ecs/apm/
   weight: 501
 - identifier: agent_amazon_ecs_logs
   name: Collecte de logs
-  parent: agent_amazon_ecs
-  url: agent/amazon_ecs/logs/
+  parent: containers_amazon_ecs
+  url: containers/amazon_ecs/logs/
   weight: 502
-- identifier: agent_amazon_ecs_tags
+- identifier: containers_amazon_ecs_tags
   name: Extraction de tag
   parent: agent_amazon_ecs
-  url: agent/amazon_ecs/tags/
+  url: containers/amazon_ecs/tags/
   weight: 503
-- identifier: agent_amazon_ecs_data_collected
+- identifier: containers_amazon_ecs_data_collected
   name: Données collectées
   parent: agent_amazon_ecs
-  url: agent/amazon_ecs/data_collected/
+  url: containers/amazon_ecs/data_collected/
   weight: 504
 - identifier: ecs_fargate
   name: AWS Fargate
