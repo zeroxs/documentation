@@ -5510,97 +5510,97 @@ main:
 - identifier: monitor_configuration
   name: Configurer des monitors
   parent: monitors_create
-  url: monitors/create/configuration/
+  url: monitors/configuration/
   weight: 101
 - identifier: monitor_types_host
   name: Host
   parent: monitors_create
-  url: monitors/create/types/host/
+  url: monitors/types/host/
   weight: 102
 - identifier: monitor_types_metrics
   name: Métrique
   parent: monitors_create
-  url: monitors/create/types/metric/
+  url: monitors/types/metric/
   weight: 103
 - identifier: monitor_types_anomaly
   name: Anomalie
   parent: monitors_create
-  url: monitors/create/types/anomaly/
+  url: monitors/types/anomaly/
   weight: 104
 - identifier: monitor_types_apm
   name: APM
   parent: monitors_create
-  url: monitors/create/types/apm/
+  url: monitors/types/apm/
   weight: 105
 - identifier: surveiller_types_auditlogs
   name: Logs d'audit
   parent: monitors_create
-  url: monitors/create/types/audit_logs/
+  url: monitors/types/audit_logs/
   weight: 106
 - identifier: monitor_types_cipipelines
   name: Pipelines de CI
   parent: monitors_create
-  url: monitors/create/types/ci_pipelines/
+  url: monitors/types/ci_pipelines/
   weight: 107
 - identifier: monitor_types_composite
   name: Composite
   parent: monitors_create
-  url: monitors/create/types/composite/
+  url: monitors/types/composite/
   weight: 108
 - identifier: monitor_types_custom_check
   name: Check custom
   parent: monitors_create
-  url: monitors/create/types/custom_check/
+  url: monitors/types/custom_check/
   weight: 109
 - identifier: monitor_types_event
   name: Événement
   parent: monitors_create
-  url: monitors/create/types/event/
+  url: monitors/types/event/
   weight: 110
 - identifier: monitor_types_forecasts
   name: Forecast
   parent: monitors_create
-  url: monitors/create/types/forecasts/
+  url: monitors/types/forecasts/
   weight: 111
 - identifier: monitor_types_integration
   name: Intégration
   parent: monitors_create
-  url: monitors/create/types/integration/
+  url: monitors/types/integration/
   weight: 112
 - identifier: monitor_types_process
   name: Live process
   parent: monitors_create
-  url: monitors/create/types/process/
+  url: monitors/types/process/
   weight: 113
 - identifier: monitor_types_log
   name: Logs
   parent: monitors_create
-  url: monitors/create/types/log/
+  url: monitors/types/log/
   weight: 114
 - identifier: monitor_types_network
   name: Network
   parent: monitors_create
-  url: monitors/create/types/network/
+  url: monitors/types/network/
   weight: 115
 - identifier: monitor_types_outlier
   name: Outlier
   parent: monitors_create
-  url: monitors/create/types/outlier/
+  url: monitors/types/outlier/
   weight: 116
 - identifier: monitor_types_process_check
   name: Check de processus
   parent: monitors_create
-  url: monitors/create/types/process_check/
+  url: monitors/types/process_check/
   weight: 117
 - identifier: monitor_types_rum
   name: Real User Monitoring
   parent: monitors_create
-  url: monitors/create/types/real_user_monitoring/
+  url: monitors/types/real_user_monitoring/
   weight: 118
 - identifier: monitor_types_watchdog
   name: Watchdog
   parent: monitors_create
-  url: monitors/create/types/watchdog/
+  url: monitors/types/watchdog/
   weight: 119
 - identifier: monitors_notify
   name: Notifications
@@ -5705,147 +5705,147 @@ main:
 - identifier: tracing_setup_overview
   name: Envoyer des traces à Datadog
   parent: tracing
-  url: tracing/setup_overview/
+  url: tracing/trace_collection/
   weight: 1
 - identifier: tracing_compatibility_requirements
   name: Compatibilité
   parent: tracing_setup_overview
-  url: tracing/setup_overview/compatibility_requirements/java/
+  url: tracing/trace_collection/compatibility/java/
   weight: 101
 - identifier: tracing_compatibility_requirements_java
   name: Java
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/java/
+  url: tracing/trace_collection/compatibility/java/
   weight: 101
 - identifier: tracing_compatibility_requirements_python
   name: Python
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/python/
+  url: tracing/trace_collection/compatibility/python/
   weight: 102
 - identifier: tracing_compatibility_requirements_ruby
   name: Ruby
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/ruby/
+  url: tracing/trace_collection/compatibility/ruby/
   weight: 103
 - identifier: tracing_compatibility_requirements_go
   name: Go
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/go/
+  url: tracing/trace_collection/compatibility/go/
   weight: 104
 - identifier: tracing_compatibility_requirements_nodejs
   name: NodeJS
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/nodejs/
+  url: tracing/trace_collection/compatibility/nodejs/
   weight: 105
 - identifier: tracing_compatibility_requirements_php
   name: PHP
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/php/
+  url: tracing/trace_collection/compatibility/php/
   weight: 106
 - identifier: tracing_compatibility_requirements_cpp
   name: C++
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/cpp/
+  url: tracing/trace_collection/compatibility/cpp/
   weight: 107
 - identifier: tracing_compatibility_requirements_dotnet_core
   name: .NET Core
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/dotnet-core/
+  url: tracing/trace_collection/compatibility/dotnet-core/
   weight: 108
 - identifier: tracing_compatibility_requirements_dotnet_framework
   name: .NET Framework
   parent: tracing_compatibility_requirements
-  url: tracing/setup_overview/compatibility_requirements/dotnet-framework/
+  url: tracing/trace_collection/compatibility/dotnet-framework/
   weight: 109
 - identifier: tracing_setup_overview_setup
   name: Ajouter la bibliothèque de tracing Datadog
   parent: tracing_setup_overview
-  url: tracing/setup_overview/setup/java/
+  url: tracing/trace_collection/dd_libraries/java/
   weight: 102
 - identifier: tracing_setup_overview_setup_java
   name: Java
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/java/
+  url: tracing/trace_collection/dd_libraries/java/
   weight: 101
 - identifier: tracing_setup_overview_setup_python
   name: Python
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/python/
+  url: tracing/trace_collection/dd_libraries/python/
   weight: 102
 - identifier: tracing_setup_overview_setup_ruby
   name: Ruby
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/ruby/
+  url: tracing/trace_collection/dd_libraries/ruby/
   weight: 103
 - identifier: tracing_setup_overview_setup_go
   name: Go
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/go/
+  url: tracing/trace_collection/dd_libraries/go/
   weight: 104
 - identifier: tracing_setup_overview_setup_nodejs
   name: NodeJS
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/nodejs/
+  url: tracing/trace_collection/dd_libraries/nodejs/
   weight: 105
 - identifier: tracing_setup_overview_setup_php
   name: PHP
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/php/
+  url: tracing/trace_collection/dd_libraries/php/
   weight: 106
 - identifier: tracing_setup_overview_setup_cpp
   name: C++
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/cpp/
+  url: tracing/trace_collection/dd_libraries/cpp/
   weight: 107
 - identifier: tracing_setup_overview_setup_dotnet_core
   name: .NET Core
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/dotnet-core/
+  url: tracing/trace_collection/dd_libraries/dotnet-core/
   weight: 108
 - identifier: tracing_setup_overview_setup_dotnet_framework
   name: .NET Framework
   parent: tracing_setup_overview_setup
-  url: tracing/setup_overview/setup/dotnet-framework/
+  url: tracing/trace_collection/dd_libraries/dotnet-framework/
   weight: 109
 - identifier: tracing_open_standards_open_standards
   name: OpenTelemetry et OpenTracing
   parent: tracing_setup_overview
-  url: tracing/setup_overview/open_standards/
+  url: opentelemetry/otel_tracing/
   weight: 103
 - identifier: tracing_open_standards_open_standards_java
   name: Java
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/java/
+  url: tracing/trace_collection/open_standards/java/
   weight: 101
 - identifier: tracing_open_standards_open_standards_python
   name: Python
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/python/
+  url: tracing/trace_collection/open_standards/python/
   weight: 102
 - identifier: tracing_open_standards_open_standards_ruby
   name: Ruby
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/ruby/
+  url: tracing/trace_collection/open_standards/ruby/
   weight: 108
 - identifier: tracing_open_standards_open_standards_go
   name: Go
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/go/
+  url: tracing/trace_collection/open_standards/go/
   weight: 104
 - identifier: tracing_open_standards_open_standards_nodejs
   name: NodeJS
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/nodejs/
+  url: tracing/trace_collection/open_standards/nodejs/
   weight: 105
 - identifier: tracing_open_standards_open_standards_php
   name: PHP
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/php/
+  url: tracing/trace_collection/open_standards/php/
   weight: 106
 - identifier: tracing_open_standards_open_standards_dotnet
   name: .NET
   parent: tracing_open_standards_open_standards
-  url: tracing/setup_overview/open_standards/dotnet/
+  url: tracing/trace_collection/open_standards/dotnet/
   weight: 108
 - identifier: tracing_serverless_functions
   name: Tracer des fonctions sans serveur
@@ -5855,57 +5855,57 @@ main:
 - identifier: tracing_proxy_setup
   name: Proxies de traces
   parent: tracing_setup_overview
-  url: tracing/setup_overview/proxy_setup/
+  url: tracing/trace_collection/proxy_setup/
   weight: 105
 - identifier: tracing_setup_overview_custom_instrumentation
   name: Instrumentation personnalisée
   parent: tracing_setup_overview
-  url: tracing/setup_overview/custom_instrumentation/java/
+  url: tracing/trace_collection/custom_instrumentation/java/
   weight: 106
 - identifier: tracing_setup_overview_custom_instrumentation_java
   name: Java
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/java/
+  url: tracing/trace_collection/custom_instrumentation/java/
   weight: 101
 - identifier: tracing_setup_overview_custom_instrumentation_python
   name: Python
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/python/
+  url: tracing/trace_collection/custom_instrumentation/python/
   weight: 102
 - identifier: tracing_setup_overview_custom_instrumentation_ruby
   name: Ruby
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/ruby/
+  url: tracing/trace_collection/custom_instrumentation/ruby/
   weight: 108
 - identifier: tracing_setup_overview_custom_instrumentation_go
   name: Go
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/go/
+  url: tracing/trace_collection/custom_instrumentation/go/
   weight: 104
 - identifier: tracing_setup_overview_custom_instrumentation_nodejs
   name: NodeJS
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/nodejs/
+  url: tracing/trace_collection/custom_instrumentation/nodejs/
   weight: 105
 - identifier: tracing_setup_overview_custom_instrumentation_php
   name: PHP
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/php/
+  url: tracing/trace_collection/custom_instrumentation/php/
   weight: 106
 - identifier: tracing_setup_overview_custom_instrumentation_cpp
   name: C++
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/cpp/
+  url: tracing/trace_collection/custom_instrumentation/cpp/
   weight: 106
 - identifier: tracing_setup_overview_custom_instrumentation_dotnet
   name: .NET
   parent: tracing_setup_overview_custom_instrumentation
-  url: tracing/setup_overview/custom_instrumentation/dotnet/
+  url: tracing/trace_collection/custom_instrumentation/dotnet/
   weight: 108
 - identifier: tracing_configure_data_security
   name: Configurer la sécurité des données
   parent: tracing_setup_overview
-  url: tracing/setup_overview/configure_data_security/
+  url: tracing/configure_data_security/
   weight: 107
 - identifier: trace_explorer
   name: Trace Explorer
@@ -5927,82 +5927,82 @@ main:
 - identifier: trace_ingestion
   name: Ingestion de traces
   parent: tracing
-  url: tracing/trace_ingestion/
+  url: tracing/trace_pipeline/
   weight: 4
 - identifier: ingestion_mechanisms
   name: Mécanismes d'ingestion
   parent: trace_ingestion
-  url: tracing/trace_ingestion/mechanisms
+  url: tracing/trace_pipeline/ingestion_mechanisms/
   weight: 401
 - identifier: ingestion_control_page
   name: Contrôles d'ingestion
   parent: trace_ingestion
-  url: tracing/trace_ingestion/ingestion_controls
+  url: tracing/trace_pipeline/ingestion_controls
   weight: 402
 - identifier: trace_ingestion_retention_usage_metrics
   name: Métriques d'utilisation
   parent: trace_ingestion
-  url: tracing/trace_ingestion/usage_metrics/
+  url: tracing/trace_pipeline/metrics/
   weight: 403
 - identifier: trace_retention
   name: Rétention des traces
   parent: tracing
-  url: tracing/trace_retention/
+  url: tracing/trace_pipeline/trace_retention/
   weight: 5
 - identifier: generate_metrics
   name: Générer des métriques à partir de spans
   parent: tracing
-  url: tracing/generate_metrics/
+  url: tracing/trace_pipeline/generate_metrics/
   weight: 6
 - identifier: deployment_tracking
   name: Suivi des déploiements
   parent: tracing
-  url: tracing/deployment_tracking/
+  url: tracing/services/deployment_tracking/
   weight: 8
 - identifier: tracing_connect_logs_and_traces
   name: Associer vos logs à vos traces
   parent: tracing
-  url: tracing/connect_logs_and_traces/
+  url: tracing/other_telemetry/connect_logs_and_traces/
   weight: 9
 - identifier: tracing_connect_logs_and_traces_java
   name: Java
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/java/
+  url: tracing/other_telemetry/connect_logs_and_traces/java/
   weight: 901
 - identifier: tracing_connect_logs_and_traces_python
   name: Python
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/python/
+  url: tracing/other_telemetry/connect_logs_and_traces/python/
   weight: 902
 - identifier: tracing_connect_logs_and_traces_go
   name: Go
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/go/
+  url: tracing/other_telemetry/connect_logs_and_traces/go/
   weight: 903
 - identifier: tracing_connect_logs_and_traces_ruby
   name: Ruby
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/ruby/
+  url: tracing/other_telemetry/connect_logs_and_traces/ruby/
   weight: 904
 - identifier: tracing_connect_logs_and_traces_php
   name: PHP
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/php/
+  url: tracing/other_telemetry/connect_logs_and_traces/php/
   weight: 905
 - identifier: tracing_connect_logs_and_traces_nodejs
   name: NodeJS
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/nodejs/
+  url: tracing/other_telemetry/connect_logs_and_traces/nodejs/
   weight: 906
 - identifier: tracing_connect_logs_and_traces_dotnet
   name: .NET
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/dotnet/
+  url: tracing/other_telemetry/connect_logs_and_traces/dotnet/
   weight: 907
 - identifier: tracing_connect_logs_and_traces_opentelemetry
   name: OpenTelemetry
   parent: tracing_connect_logs_and_traces
-  url: tracing/connect_logs_and_traces/opentelemetry/
+  url: tracing/other_telemetry/connect_logs_and_traces/opentelemetry/
   weight: 908
 - identifier: tracing_connect_synthetics_and_traces
   name: Associer les tests Synthetic à vos traces
@@ -6017,132 +6017,132 @@ main:
 - identifier: tracing_runtime_metrics
   name: Métriques runtime
   parent: tracing
-  url: tracing/runtime_metrics/
+  url: tracing/metrics/runtime_metrics/
   weight: 12
 - identifier: tracing_runtime_metrics_java
   name: Java
   parent: tracing_runtime_metrics
-  url: tracing/runtime_metrics/java/
+  url: tracing/metrics/runtime_metrics/java/
   weight: 1201
 - identifier: tracing_runtime_metrics_python
   name: Python
   parent: tracing_runtime_metrics
-  url: tracing/runtime_metrics/python/
+  url: tracing/metrics/runtime_metrics/python/
   weight: 1202
 - identifier: tracing_runtime_metrics_ruby
   name: Ruby
   parent: tracing_runtime_metrics
-  url: tracing/runtime_metrics/ruby/
+  url: tracing/metrics/runtime_metrics/ruby/
   weight: 1203
 - identifier: tracing_runtime_metrics_nodejs
   name: NodeJS
   parent: tracing_runtime_metrics
-  url: tracing/runtime_metrics/nodejs/
+  url: tracing/metrics/runtime_metrics/nodejs/
   weight: 1204
 - identifier: tracing_runtime_metrics_dotnet
   name: .NET
   parent: tracing_runtime_metrics
-  url: tracing/runtime_metrics/dotnet/
+  url: tracing/metrics/runtime_metrics/dotnet/
   weight: 1205
 - identifier: tracing_runtime_metrics_go
   name: Go
   parent: tracing_runtime_metrics
-  url: tracing/runtime_metrics/go/
+  url: tracing/metrics/runtime_metrics/go/
   weight: 1206
 - identifier: profiler
   name: Profileur en continu
   parent: tracing
-  url: tracing/profiler/
+  url: profiler/
   weight: 13
 - identifier: profiler_enabling
   name: Activer le profileur
   parent: profiler
-  url: tracing/profiler/enabling/java/
+  url: profiler/enabling/java/
   weight: 1301
 - identifier: profiler_enabling_java
   name: Activer le profileur Java
   parent: profiler_enabling
-  url: tracing/profiler/enabling/java/
+  url: profiler/enabling/java/
   weight: 101
 - identifier: profiler_enabling_python
   name: Activer le profileur Python
   parent: profiler_enabling
-  url: tracing/profiler/enabling/python/
+  url: profiler/enabling/python/
   weight: 102
 - identifier: profiler_enabling_go
   name: Activer le profileur Go
   parent: profiler_enabling
-  url: tracing/profiler/enabling/go/
+  url: profiler/enabling/go/
   weight: 103
 - identifier: profiler_enabling_ruby
   name: Activer le profileur Ruby
   parent: profiler_enabling
-  url: tracing/profiler/enabling/ruby/
+  url: profiler/enabling/ruby/
   weight: 104
 - identifier: profiler_enabling_nodejs
   name: Activer le profileur Node.js
   parent: profiler_enabling
-  url: tracing/profiler/enabling/nodejs/
+  url: profiler/enabling/nodejs/
   weight: 105
 - identifier: profiler_enabling_dotnet
   name: Activer le profileur .NET
   parent: profiler_enabling
-  url: tracing/profiler/enabling/dotnet/
+  url: profiler/enabling/dotnet/
   weight: 106
 - identifier: profiler_enabling_php
   name: Activer le profileur PHP
   parent: profiler_enabling
-  url: tracing/profiler/enabling/php/
+  url: profiler/enabling/php/
   weight: 107
 - identifier: profiler_enabling_linux
   name: Activer le profileur Linux
   parent: profiler_enabling
-  url: tracing/profiler/enabling/linux/
+  url: profiler/enabling/linux/
   weight: 108
 - identifier: profiler_search_profiles
   name: Rechercher des profils
   parent: profiler
-  url: tracing/profiler/search_profiles/
+  url: profiler/search_profiles/
   weight: 1302
 - identifier: profiler_traces_profiles
   name: Étudier les traces ou les endpoints lents
   parent: profiler
-  url: tracing/profiler/connect_traces_and_profiles/
+  url: profiler/connect_traces_and_profiles/
   weight: 1303
 - identifier: profiler_compare
   name: Comparer des profils
   parent: profiler
-  url: tracing/profiler/compare_profiles
+  url: profiler/compare_profiles
   weight: 1304
 - identifier: profiler_profiler_troubleshooting
   name: Dépannage du profileur
   parent: profiler
-  url: tracing/profiler/profiler_troubleshooting/
+  url: profiler/profiler_troubleshooting/
   weight: 1305
 - identifier: tracing_vis
   name: Glossaire de l'APM
   parent: tracing
-  url: tracing/visualization/
+  url: tracing/glossary/
   weight: 14
 - name: Liste des services
   parent: tracing_vis
-  url: tracing/visualization/services_list/
+  url: tracing/services/services_list/
   weight: 1401
 - name: Page Service
   parent: tracing_vis
-  url: tracing/visualization/service/
+  url: tracing/services/service_page/
   weight: 1402
 - name: Page Ressource
   parent: tracing_vis
-  url: tracing/visualization/resource/
+  url: tracing/services/resource_page/
   weight: 1403
 - name: Vue Trace
   parent: tracing_vis
-  url: tracing/visualization/trace/
+  url: tracing/trace_explorer/trace_view
   weight: 1404
 - name: Service Map
   parent: tracing_vis
-  url: tracing/visualization/services_map/
+  url: tracing/services/services_map/
   weight: 1405
 - identifier: tracing_error_tracking
   name: Suivi des erreurs
@@ -7499,7 +7499,7 @@ main:
   weight: 1
 - name: Tracing
   parent: data_security
-  url: /tracing/setup_overview/configure_data_security/
+  url: /tracing/configure_data_security/
   weight: 2
 - name: Log Management
   parent: data_security
