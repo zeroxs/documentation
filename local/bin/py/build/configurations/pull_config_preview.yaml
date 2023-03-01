@@ -55,7 +55,7 @@
 
         contents:
             - action: integrations
-              branch: bryce/add-azure-diagnostic-extension-deprecation-noted
+              branch: bryce/add-azure-diagnostic-extension-deprecation-note
               globs:
                   - integration/*/*_metadata.csv
                   - integration/*/manifest.json
