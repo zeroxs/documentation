@@ -720,6 +720,7 @@ class Integrations:
         new_file_name = "{}.md".format(
             basename(dirname(file_name))
         )
+        
         # is this the same as a committed hardcoded integration
         exist_already = (self.content_integrations_dir + new_file_name in self.initial_integration_files)
         # is this overwriting another generated integration
