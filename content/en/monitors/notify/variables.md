@@ -347,6 +347,7 @@ Logs, spans, and RUM events have generic reserved attributes, which you can use 
 | Log             | `{{log.key}}`     | `message`, `service`, `status`, `source`, `span_id`, `timestamp`, `trace_id` |
 | Trace Analytics | `{{span.key}}`    | `env`, `operation_name`, `resource_name`, `service`, `status`, `span_id`, `timestamp`, `trace_id`, `type` |
 | RUM             | `{{rum.key}}`     | `service`, `status`, `timestamp` |
+| Database Monitoring             | `{{databasemonitoring.key}}`     | `source`, `service`, `host` |
 
 If the matching event does not contain the attribute in its definition, the variable is rendered empty.
 
