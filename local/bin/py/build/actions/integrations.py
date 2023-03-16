@@ -720,7 +720,7 @@ class Integrations:
         new_file_name = "{}.md".format(
             basename(dirname(file_name))
         )
-        
+
         # is this the same as a committed hardcoded integration
         exist_already = (self.content_integrations_dir + new_file_name in self.initial_integration_files)
         # is this overwriting another generated integration
@@ -728,7 +728,7 @@ class Integrations:
             self.content_integrations_dir + new_file_name
         )
 
-        regex_skip_sections_end = r"(```|\{\{(< \/code-block |\{\{(<|%) \/site-region (>|%)\}\})"
+        regex_skip_sections_end = r"(```|\{\{< \/code-block |\{\{(<|%) \/site-region (>|%)\}\})"
         regex_skip_sections_start = r"(```|\{\{< code-block |\{\{(<|%) site-region)"
 
         ## Formating all link as reference to avoid any corner cases
