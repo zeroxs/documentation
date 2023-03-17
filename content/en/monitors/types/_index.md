@@ -37,6 +37,7 @@ further_reading:
 {{< nextlink href="/monitors/types/slo" >}}<strong>SLO Alerts</strong>: Monitor your SLO's error budget and burn rate.{{< /nextlink >}}
 {{< nextlink href="/synthetics/guide/synthetic-test-monitors" >}}<strong>Synthetic Monitoring</strong>: Monitor metric values or test status from Synthetic test runs.{{< /nextlink >}}
 {{< nextlink href="/monitors/types/watchdog" >}}<strong>Watchdog</strong>: Get notified when Watchdog detects anomalous behavior.{{< /nextlink >}}
+{{< nextlink href="/monitors/types/database_monitoring" >}}<strong>Database Monitoring</strong>: Alert on query executions and explain plans.{{< /nextlink >}}
 {{< /whatsnext >}}
 
 
