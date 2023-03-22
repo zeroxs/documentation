@@ -35,11 +35,18 @@ aliases:
   - /tracing/advanced/
   - /tracing/api
   - /tracing/faq/distributed-tracing/
+algolia:
+  rank: 1  # This is used to break ties
+  category: Documentation
+  subcategory: Test By Kari
+  tags: ["distributed tracing"]
 ---
 
 {{< vimeo 381554158 >}}
 
 </br>
+
+test
 
 Datadog Application Performance Monitoring (APM) gives deep visibility into your applications with **out-of-the-box performance dashboards** for web services, queues, and databases to monitor requests, errors, and latency. Distributed traces **seamlessly correlate** to browser sessions, logs, profiles, synthetic checks, network, processes, and infrastructure metrics across hosts, containers, proxies, and serverless functions. Navigate directly from investigating a slow trace to **identifying the specific line of code** causing performance bottlenecks with code hotspots.
 
