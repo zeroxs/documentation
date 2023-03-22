@@ -13,6 +13,9 @@ further_reading:
     - link: 'https://learn.datadoghq.com/courses/intro-to-apm'
       tag: 'Learning Center'
       text: 'Introduction to Application Performance Monitoring'
+algolia:
+  rank: 1  # This is used to break ties
+  tags: ["distributed tracing"]
 ---
 
 ## Overview
