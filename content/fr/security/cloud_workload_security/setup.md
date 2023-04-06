@@ -123,70 +123,93 @@ docker run -d --name dd-agent \
 
 {{% tab "Debian" %}}
 
-Pour les déploiements basés sur des packages, le package Datadog doit être déployé : exécutez `dkpg -i datadog-agent_7....deb`.
+Pour les déploiements basés sur des packages, le package Datadog doit être déployé : exécutez `dpkg -i datadog-agent_7....deb`.
 
-Par défaut, la solution Runtime Security est désactivée. Pour l'activer, les fichiers `security-agent.yaml` et `system-probe.yaml` doivent être modifiés. Exécutez les commandes suivantes pour activer ces configurations :
+Par défaut, la solution Runtime Security est désactivée. Pour l'activer, les fichiers `security-agent.yaml` et `system-probe.yaml` doivent être modifiés :
 
-{{< code-block lang="shell" filename="debian-runtime-security.sh" >}}
+1. Copier les fichiers d'exemple de configurations:
 
-echo "runtime_security_config.enabled: true" >> /etc/datadog-agent/security-agent.yaml
-echo "runtime_security_config.enabled: true" >> /etc/datadog-agent/system-probe.yaml
+    ```shell
+    sudo -u dd-agent install -m 0640 /etc/datadog-agent/system-probe.yaml.example /etc/datadog-agent/system-probe.yaml
+    sudo -u dd-agent install -m 0640 /etc/datadog-agent/security-agent.yaml.example /etc/datadog-agent/security-agent.yaml
+    ```
 
-systemctl restart datadog-agent
+2. Editer les fichiers `/etc/datadog-agent/security-agent.yaml` et `/etc/datadog-agent/system-probe.yaml` pour activer le paramètre suivant :
 
-{{< /code-block >}}
+    ```yaml
+    runtime_security_config:
+      ## @param enabled - boolean - optional - default: false
+      ## Set to true to enable Cloud Workload Security (CWS).
+      #
+      enabled: true
+    ```
 
-Version 7.36 de l'[Agent Datadog][1] uniquement : pour activer la collecte d'événements réseau CWS, utilisez ce qui suit :
+3. Redémarrer l'Agent Datadog.
 
-```shell
-echo "runtime_security_config.network.enabled: true" >> /etc/datadog-agent/system-probe.yaml
-```
+    ```shell
+    sudo service datadog-agent restart
+    ```
 
-Une fois vos modifications appliquées, redémarrez l'Agent Security et le system-probe.
-
-[1]: https://app.datadoghq.com/account/settings#agent/kubernetes
 {{% /tab %}}
 
 {{% tab "Fedora/CentOS" %}}
 
 Pour les déploiements basés sur des packages, le package Datadog doit être déployé : exécutez `yum/dnf install datadog-agent_7....rpm`.
 
-Par défaut, la solution Runtime Security est désactivée. Pour l'activer, les fichiers `security-agent.yaml` et `system-probe.yaml` doivent être modifiés. Exécutez les commandes suivantes pour activer ces configurations :
+Par défaut, la solution Runtime Security est désactivée. Pour l'activer, les fichiers `security-agent.yaml` et `system-probe.yaml` doivent être modifiés :
 
-{{< code-block lang="shell" filename="fedora-centos-runtime-security.sh" >}}
-echo "runtime_security_config.enabled: true" >> /etc/datadog-agent/security-agent.yaml
-echo "runtime_security_config.enabled: true" >> /etc/datadog-agent/system-probe.yaml
-systemctl restart datadog-agent
-{{< /code-block >}}
+1. Copier les fichiers d'exemple de configurations:
 
-Version 7.36 de l'[Agent Datadog][1] uniquement : pour activer la collecte d'événements réseau CWS, utilisez ce qui suit :
+    ```shell
+    sudo -u dd-agent install -m 0640 /etc/datadog-agent/system-probe.yaml.example /etc/datadog-agent/system-probe.yaml
+    sudo -u dd-agent install -m 0640 /etc/datadog-agent/security-agent.yaml.example /etc/datadog-agent/security-agent.yaml
+    ```
 
-```shell
-echo "runtime_security_config.network.enabled: true" >> /etc/datadog-agent/system-probe.yaml
-```
+2. Editer les fichiers `/etc/datadog-agent/security-agent.yaml` et `/etc/datadog-agent/system-probe.yaml` pour activer le paramètre suivant :
 
-[1]: https://app.datadoghq.com/account/settings#agent/kubernetes
+    ```yaml
+    runtime_security_config:
+      ## @param enabled - boolean - optional - default: false
+      ## Set to true to enable Cloud Workload Security (CWS).
+      #
+      enabled: true
+    ```
+
+3. Redémarrer l'Agent Datadog.
+
+    ```shell
+    sudo service datadog-agent restart
+    ```
+
 {{% /tab %}}
 
 {{% tab "Host (autres)" %}}
 
-Pour les déploiements basés sur des packages, le package Datadog doit être déployé. Installez le package à l'aide de votre gestionnaire de packages.
+Par défaut, la solution Runtime Security est désactivée. Pour l'activer, les fichiers `security-agent.yaml` et `system-probe.yaml` doivent être modifiés :
 
-Par défaut, la solution Runtime Security est désactivée. Pour l'activer, les fichiers `security-agent.yaml` et `system-probe.yaml` doivent être modifiés. Exécutez les commandes suivantes pour activer ces configurations :
+1. Copier les fichiers d'exemple de configurations:
 
-{{< code-block lang="shell" filename="host-runtime-security.sh" >}}
-echo "runtime_security_config.enabled: true" >> /etc/datadog-agent/security-agent.yaml
-echo "runtime_security_config.enabled: true" >> /etc/datadog-agent/system-probe.yaml
-systemctl restart datadog-agent
-{{< /code-block >}}
+    ```shell
+    sudo -u dd-agent install -m 0640 /etc/datadog-agent/system-probe.yaml.example /etc/datadog-agent/system-probe.yaml
+    sudo -u dd-agent install -m 0640 /etc/datadog-agent/security-agent.yaml.example /etc/datadog-agent/security-agent.yaml
+    ```
 
-Version 7.36 de l'[Agent Datadog][1] uniquement : pour activer la collecte d'événements réseau CWS, utilisez ce qui suit :
+2. Editer les fichiers `/etc/datadog-agent/security-agent.yaml` et `/etc/datadog-agent/system-probe.yaml` pour activer le paramètre suivant :
 
-```shell
-echo "runtime_security_config.network.enabled: true" >> /etc/datadog-agent/system-probe.yaml
-```
+    ```yaml
+    runtime_security_config:
+      ## @param enabled - boolean - optional - default: false
+      ## Set to true to enable Cloud Workload Security (CWS).
+      #
+      enabled: true
+    ```
 
-[1]: https://app.datadoghq.com/account/settings#agent/kubernetes
+3. Redémarrer l'Agent Datadog.
+
+    ```shell
+    sudo service datadog-agent restart
+    ```
+
 {{% /tab %}}
 
 {{% tab "Amazon Elastic Beanstalk" %}}
