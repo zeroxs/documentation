@@ -483,7 +483,7 @@ To start a test mode, call `datadog.trace.api.civisibility.DDTestSession#testMod
 
 When building and testing the module has finished, call `datadog.trace.api.civisibility.DDTestModule#end`.
 
-#### Test Suites
+#### Test Suite
 
 A test suite comprises a set of tests that share common functionality.
 They can share a common initialization and teardown, and can also share some variables.
@@ -493,7 +493,7 @@ Create test suites in a test module by calling `datadog.trace.api.civisibility.D
 
 Call `datadog.trace.api.civisibility.DDTestSuite#end` when all the related tests in the suite have finished their execution.
 
-#### Tests
+#### Test
 
 A test represents a single test case that is executed as part of a test suite.
 Usually it corresponds to a method that contains testing logic.
