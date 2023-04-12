@@ -22,7 +22,7 @@ integration_id: "rsyslog"
 
 ## Overview
 
-Configure Rsyslog to gather logs from your host, containers, & services.
+Configure Rsyslog to gather logs from your host, containers, and services.
 
 ## Setup
 
