@@ -2593,6 +2593,11 @@ main:
     parent: cspm
     identifier: signals
     weight: 108
+  - name: Findings API
+    url: /security/cspm/findings_api/
+    parent: cspm
+    identifier: signals
+    weight: 108
   - name: Cloud Workload Security
     url: security/cloud_workload_security/
     parent: csm
