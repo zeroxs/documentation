@@ -20761,12 +20761,13 @@ paths:
       description: Get a list of CSPM findings.
       operationId: ListFindings
       parameters:
-      - description: Limit the number of findings returned.
+      - description: Limit the number of findings returned. Must be <= 1000.
         example: 50
         in: query
-        name: limit
+        name: page[limit]
         required: false
         schema:
+          default: 100
           format: int64
           maximum: 1000
           minimum: 1
@@ -20876,7 +20877,12 @@ paths:
       summary: List findings
       tags:
       - Security Monitoring
-      x-menu-order: 1
+      x-menu-order: 17
+      x-pagination:
+        cursorParam: page[cursor]
+        cursorPath: meta.page.cursor
+        limitParam: page[limit]
+        resultsPath: data
       x-undo:
         type: safe
       x-unstable: '**Note**: This endpoint is in public beta.
@@ -20920,7 +20926,7 @@ paths:
       summary: Get a finding
       tags:
       - Security Monitoring
-      x-menu-order: 2
+      x-menu-order: 18
       x-undo:
         type: safe
       x-unstable: '**Note**: This endpoint is in public beta.

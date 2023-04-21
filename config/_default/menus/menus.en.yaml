@@ -6047,7 +6047,7 @@ api:
         - GetFinding
       unstable:
         - v2
-      order: 2
+      order: 18
   - name: List findings
     url: '#list-findings'
     identifier: security-monitoring-list-findings
@@ -6060,7 +6060,7 @@ api:
         - ListFindings
       unstable:
         - v2
-      order: 1
+      order: 17
   - name: Change the triage state of a security signal
     url: '#change-the-triage-state-of-a-security-signal'
     identifier: security-monitoring-change-the-triage-state-of-a-security-signal
